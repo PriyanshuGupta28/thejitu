@@ -12,28 +12,44 @@ body {
     color-scheme: dark;
   }
 }
-.faded-border {
-  position: relative;
-  border-radius: 48px; /* Rounded corners */
-  padding: 48px;
-  background: linear-gradient(to bottom, #101010, #000000);
-  overflow: hidden; /* Clips pseudo-element */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.faded-border::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit; /* Matches the border radius */
-  padding: 2px; /* Border thickness */
-  background: linear-gradient(to bottom, white, black);
-  -webkit-mask: linear-gradient(white, transparent);
-  mask: linear-gradient(white, transparent);
-  z-index: 1;
-  pointer-events: none;
+.animate-gradient-move {
+  background-size: 300% 300%;
+  animation: gradient-move 3s ease infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-blink {
+  animation: blink 2s infinite;
+}
+
+/* Adjust the grid as needed */
+.grid-cols-20 {
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.grid-rows-10 {
+  grid-template-rows: repeat(10, 1fr);
 }
 
 @layer base {
