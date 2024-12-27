@@ -2,7 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
+html,
+body {
+  /* @apply bg-white dark:bg-zinc-950; */
+  @apply bg-zinc-950;
+  font-family: sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+.faded-border {
+  position: relative;
+  border-radius: 48px; /* Rounded corners */
+  padding: 48px;
+  background: linear-gradient(to bottom, #101010, #000000);
+  overflow: hidden; /* Clips pseudo-element */
+}
+
+.faded-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit; /* Matches the border radius */
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(to bottom, white, black);
+  -webkit-mask: linear-gradient(white, transparent);
+  mask: linear-gradient(white, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
