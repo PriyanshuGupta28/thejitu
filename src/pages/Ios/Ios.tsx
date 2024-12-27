@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import iosimg from "../../assets/ioscaseimg.png";
+import iosimg from "../../assets/iOSPoster.png";
 import ios18logo from "../../assets/iso18logo.png";
 import GradientText from "../../components/GradientText.tsx/GradientText";
 
