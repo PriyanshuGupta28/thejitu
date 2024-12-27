@@ -9,7 +9,7 @@ const PageHeader: React.FC = () => {
         {[...Array(200)].map((_, index) => (
           <div
             key={index}
-            className="w-1 h-1 bg-white/10 rounded-full animate-blink"
+            className="w-1 h-1 bg-white/20 rounded-full animate-blink"
             style={{
               animationDelay: `${Math.random() * 3}s`,
             }}
