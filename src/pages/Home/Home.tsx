@@ -20,7 +20,6 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-[100%] h-6 bg-gradient-to-l from-[#e43d19] via-[#3472bc] to-[#06d6d6] blur-[20px] animate-gradient-move" />
         <BottomHero />
       </div>
     </>
