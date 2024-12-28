@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectBasedOn = () => {
+const ProjectBasedOn: React.FC = () => {
   return <div>ProjectBasedOn</div>;
 };
 
