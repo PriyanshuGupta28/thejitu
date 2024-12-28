@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./VerticalScroll.css";
 
-const VerticalScroll = () => {
+const VerticalScroll: React.FC = () => {
   const leftImages = [
     "https://media.istockphoto.com/id/1368628035/photo/brooklyn-bridge-at-sunset.jpg?s=612x612&w=0&k=20&c=hPbMbTYRAVNYWAUMkl6r62fPIjGVJTXzRURCyCfoG08=", // Replace with your image paths
     "https://media.istockphoto.com/id/1368628035/photo/brooklyn-bridge-at-sunset.jpg?s=612x612&w=0&k=20&c=hPbMbTYRAVNYWAUMkl6r62fPIjGVJTXzRURCyCfoG08=",
