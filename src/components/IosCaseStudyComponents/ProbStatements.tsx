@@ -1,4 +1,8 @@
 import React from "react";
+import iosedit from "../../assets/iosicons/edit.png";
+import ioscall from "../../assets/iosicons/call.png";
+import iosvoice from "../../assets/iosicons/voice.png";
+import ioscontrol from "../../assets/iosicons/control.png";
 
 const ProbStatements: React.FC = () => {
   return (
@@ -9,8 +13,8 @@ const ProbStatements: React.FC = () => {
             Problem <br />
             Statements
           </div>
-          <div className="grow shrink basis-0 flex-col justify-center items-center gap-9 inline-flex">
-            <div className="self-stretch text-white text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+          <div className="grow shrink basis-0 flex-col justify-center items-center gap-12 inline-flex">
+            <div className="self-stretch text-white text-[11px] font-normal font-text leading-tight">
               While iOS has long been admired for its design consistency,
               several inconsistencies across different apps and components are
               evident. As a designer, I understand the challenges of maintaining
@@ -21,17 +25,14 @@ const ProbStatements: React.FC = () => {
               applications, creating a more cohesive ecosystem.
             </div>
             <div className="self-stretch h-[141px] flex-col justify-start items-start gap-3 flex">
-              <div className="p-1.5 bg-[#007aff] rounded-xl flex-col justify-center items-center gap-2.5 flex overflow-hidden">
-                <div className="w-7 h-7 text-center text-white text-2xl font-normal font-['SF Pro Text'] leading-tight">
-                  􀈍
-                </div>
-              </div>
+              <img src={iosedit} alt="ios edit" />
               <div className="self-stretch">
-                <span className="text-white text-[13px] font-bold font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[13px] font-bold font-text leading-tight">
                   Inconsistent Design Component
                   <br />
+                  <br />
                 </span>
-                <span className="text-white text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[11px] font-normal font-text leading-tight">
                   One major issue I encountered is the inconsistency in design
                   component across various iOS apps. For example, the visual
                   hierarchy and interaction patterns between different module
@@ -43,17 +44,14 @@ const ProbStatements: React.FC = () => {
               </div>
             </div>
             <div className="self-stretch h-[161px] flex-col justify-start items-start gap-3 flex">
-              <div className="p-1.5 bg-[#34c759] rounded-xl flex-col justify-center items-center gap-2.5 flex overflow-hidden">
-                <div className="w-7 h-7 text-center text-white text-[23px] font-normal font-['SF Pro Text'] leading-tight">
-                  􀌿
-                </div>
-              </div>
+              <img src={ioscall} alt="ios call" />
               <div className="self-stretch">
-                <span className="text-white text-[13px] font-bold font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[13px] font-bold font-text leading-tight">
                   Limited Content Accessibility in the Phone App
                   <br />
+                  <br />
                 </span>
-                <span className="text-white text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[11px] font-normal font-text leading-tight">
                   The Phone and Contacts apps require a significant overhaul in
                   terms of accessibility and user interaction. Currently, they
                   offer limited options for sorting and managing contacts, which
@@ -65,17 +63,14 @@ const ProbStatements: React.FC = () => {
               </div>
             </div>
             <div className="self-stretch h-[161px] flex-col justify-start items-start gap-3 flex">
-              <div className="p-1.5 bg-[#ff3b30] rounded-xl flex-col justify-center items-center gap-2.5 flex overflow-hidden">
-                <div className="w-7 h-7 text-center text-white text-xl font-normal font-['SF Pro Text'] leading-tight">
-                  􂃓
-                </div>
-              </div>
+              <img src={iosvoice} alt="ios voice" />
               <div className="self-stretch">
-                <span className="text-white text-[13px] font-bold font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[13px] font-bold font-text leading-tight">
                   Call Recording Placement
                   <br />
+                  <br />
                 </span>
-                <span className="text-white text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[11px] font-normal font-text leading-tight">
                   Another critical pain point is the placement of call
                   recordings. Currently, call recordings are saved in the Notes
                   app, which raises the question: why is this the case when
@@ -88,17 +83,14 @@ const ProbStatements: React.FC = () => {
               </div>
             </div>
             <div className="self-stretch h-[161px] flex-col justify-start items-start gap-3 flex">
-              <div className="p-1.5 bg-[#ff9500] rounded-xl flex-col justify-center items-center gap-2.5 flex overflow-hidden">
-                <div className="w-7 h-7 text-center text-white text-xl font-normal font-['SF Pro Text'] leading-tight">
-                  􀜊
-                </div>
-              </div>
+              <img src={ioscontrol} alt="ios control" />
               <div className="self-stretch">
-                <span className="text-white text-[13px] font-bold font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[13px] font-bold font-text leading-tight">
                   Control Center Inefficiencies
                   <br />
+                  <br />
                 </span>
-                <span className="text-white text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+                <span className="text-white text-[11px] font-normal font-text leading-tight">
                   The Control Center also presents a usability issue. The
                   current design requires users to manage connectivity
                   controllers (like Wi-Fi, Bluetooth, etc.) individually,
