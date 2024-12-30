@@ -5,7 +5,10 @@ import { Menu } from "lucide-react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="w-full h-[72px] bg-zinc-950/40 text-white flex items-center justify-between px-[48px] top-0 sticky z-50 backdrop-blur-[10px] border-b border-zinc-800 rounded-b-[20px]">
+    <nav
+      className="w-full h-[72px] bg-zinc-950/40 text-white flex items-center justify-between px-[48px] top-0 fixed  backdrop-blur-[10px] border-b border-zinc-800 rounded-b-[20px]"
+      style={{ zIndex: 1000 }}
+    >
       <div className="flex-col hidden md:flex">
         <p className="text-[16px]">Jitendra Kumar</p>
         <p className="text-[11px] text-white">Product Designer</p>
