@@ -7,7 +7,10 @@ import ioscontrol from "../../assets/iosicons/control.png";
 const ProbStatements: React.FC = () => {
   return (
     <div>
-      <div className="h-[944px] w-[1048px] bg-black flex-col justify-center items-center gap-6 inline-flex">
+      <div
+        className="h-[944px] w-[1048px] flex-col justify-center items-center gap-6 inline-flex 
+      "
+      >
         <div className="justify-start items-start gap-4 inline-flex">
           <div className="w-[220px] text-white text-2xl font-semibold font-['SF Pro Display']">
             Problem <br />
