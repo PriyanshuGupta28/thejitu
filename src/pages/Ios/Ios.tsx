@@ -7,7 +7,7 @@ import IntroCard from "../../components/IosCaseStudyComponents/IntroCard";
 import { CircleChevronDown } from "lucide-react";
 import ProbStatements from "../../components/IosCaseStudyComponents/ProbStatements";
 import RedesignGoals from "../../components/IosCaseStudyComponents/RedesignGoals";
-import ProjectBasedOn from "../../components/IosCaseStudyComponents/ProjectBasedOn";
+import ProjectRedifinedBasedOn from "../../components/IosCaseStudyComponents/ProjectRedifinedBasedOn";
 
 // Main component for the iOS page
 const Ios: React.FC = () => {
@@ -73,9 +73,9 @@ const Ios: React.FC = () => {
         </div>
       </div>
       <ProbStatements />
-      <div className="flex flex-col w-[100%] bg-[#f2f2f5] justify-center items-center">
+      <div className="flex flex-col p-[48px] w-[100%] bg-[#f2f2f5] justify-center items-center">
         <RedesignGoals />
-        <ProjectBasedOn />
+        <ProjectRedifinedBasedOn />
       </div>
     </div>
   );
