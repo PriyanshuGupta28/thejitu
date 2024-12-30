@@ -2,13 +2,13 @@ import React from "react";
 
 const RedesignGoals: React.FC = () => {
   return (
-    <div className="h-[516px] p-12 bg-[#f2f2f5] flex-col justify-center items-center gap-12 inline-flex">
-      <div className="w-[928px] justify-start items-start gap-4 inline-flex">
-        <div className="w-[220px] text-black text-2xl font-semibold font-['SF Pro Display']">
+    <div className="h-[516px] w-[1048px] bg-[#f2f2f5] flex-col justify-center items-center gap-12 inline-flex">
+      <div className="justify-start items-start gap-4 inline-flex">
+        <div className="w-[220px] text-black text-[24px] font-semibold font-display">
           Redesign Goals
         </div>
         <div className="grow shrink basis-0">
-          <ul className="text-black text-[11px] font-normal font-['SF Pro Text'] leading-tight list-disc ml-4">
+          <ul className="text-black text-[11px] font-normal font-text leading-tight list-disc ml-4">
             <li>
               As a dedicated iOS user, I’ve always admired Apple’s commitment to
               creating simple and intuitive designs. However, after years of
@@ -19,7 +19,7 @@ const RedesignGoals: React.FC = () => {
             </li>
           </ul>
           <br />
-          <ul className="text-black text-[11px] font-normal font-['SF Pro Text'] leading-tight list-disc ml-4">
+          <ul className="text-black text-[11px] font-normal font-text leading-tight list-disc ml-4">
             <li>
               <span className="font-bold">
                 Enhancing Consistency Across Apps:{" "}
@@ -63,7 +63,7 @@ const RedesignGoals: React.FC = () => {
             </li>
           </ul>
           <br />
-          <span className="text-black text-[11px] font-normal font-['SF Pro Text'] leading-tight">
+          <span className="text-black text-[11px] font-normal font-text leading-tight">
             Through these redesign goals, my aim was to elevate the iOS
             experience, making it even more intuitive and user-friendly, while
             staying true to Apple’s design principles of simplicity and
