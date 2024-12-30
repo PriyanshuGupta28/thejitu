@@ -6,9 +6,9 @@ import SubFooter from "../SubFooter/SubFooter";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-[100%] h-[186px] bg-gradient-to-b from-[#101010] to-[#000000]">
-      <div className="flex items-center justify-between w-[100%] h-[144px] p-[48px]">
-        <div className="flex gap-[16px] items-center">
+    <footer className="flex flex-col w-full bg-gradient-to-b from-[#101010] to-[#000000]">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8 p-6 md:h-[144px]">
+        <div className="flex gap-4 items-center">
           <div>
             <img src={logo} alt="logo" className="w-[22.86px] h-[48px]" />
           </div>
@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
             <p className="text-white/80 text-[12px]">Product Designer</p>
           </div>
         </div>
-        <div className="flex gap-[8px] ">
-          <div className="flex justify-center items-center h-[42px] w-[190px] border border-zinc-700 rounded-[100px] p-[12px] px-[16px] gap-[8px]">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+          <div className="flex justify-center items-center h-[42px] w-[190px] border border-zinc-700 rounded-full p-3 px-4 gap-2">
             <div>
               <Mail className="w-[18px] h-[18px]" />
             </div>
@@ -29,14 +29,16 @@ const Footer: React.FC = () => {
               jitofficial@icloud.com
             </Link>
           </div>
-          {footerLinks.map((link) => (
-            <FooterIcon
-              key={link.title}
-              title={link.title}
-              icon={link.icon}
-              link={link.link}
-            />
-          ))}
+          <div className="flex gap-4 justify-center">
+            {footerLinks.map((link) => (
+              <FooterIcon
+                key={link.title}
+                title={link.title}
+                icon={link.icon}
+                link={link.link}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <SubFooter />
@@ -49,7 +51,7 @@ export default Footer;
 const FooterIcon = ({ title, link, icon }: FooterLinksProps) => {
   return (
     <div
-      className="h-[42px] w-[42px] flex justify-center items-center border border-zinc-700 rounded-[100px]"
+      className="h-[42px] w-[42px] flex justify-center items-center border border-zinc-700 rounded-full"
       title={title}
     >
       <Link to={link}>{icon}</Link>
