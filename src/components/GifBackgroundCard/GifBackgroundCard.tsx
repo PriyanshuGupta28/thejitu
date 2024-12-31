@@ -14,7 +14,7 @@ const GifBackgroundCard: React.FC<GifBackgroundCardProps> = ({
   icon,
 }) => {
   return (
-    <div className="bg-gradient-to-b from-[#404040] to-black w-[370px] h-[300px] md:w-[456px] md:h-[300px] rounded-[48px] p-[1px] relative">
+    <div className="bg-border-fade w-[370px] h-[300px] md:w-[456px] md:h-[300px] rounded-[48px] p-[1px] relative">
       <div className="flex flex-col w-[370px] h-[300px] md:w-[454px] md:h-[300px] bg-cover bg-center transition-all duration-300 ease-in-out p-[48px] rounded-[48px] relative">
         <div className="absolute top-0 left-0 w-full h-[230px] bg-black rounded-[48px]">
           <img
@@ -40,7 +40,7 @@ const GifBackgroundCard: React.FC<GifBackgroundCardProps> = ({
           </p>
         </div>
       </div>
-      <div className="absolute top-[0px] left-0 w-full h-full bg-gradient-to-t from-[#000000] to-[#000000]/0   shadow-[0_1.96px_1.96px_rgba(0,0,0,0.25)] rounded-[48px]"></div>
+      <div className="absolute top-[0px] left-0 w-full h-full bg-overlay-fade shadow-[0_1.96px_1.96px_rgba(0,0,0,0.25)] rounded-[48px]"></div>
     </div>
   );
 };
