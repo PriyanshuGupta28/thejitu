@@ -5,8 +5,8 @@ import GradientText from "../GradientText.tsx/GradientText";
 const BottomHero: React.FC = () => {
   return (
     <div className="py-[48px] px-[16px] md:px-0 ">
-      <div className="bg-gradient-to-b from-[#404040] to-black rounded-[48px] w-[100%] h-[100%] md:w-[930px] md:h-[296px] p-[1px]">
-        <div className="flex flex-col md:flex-row gap-[72px] w-full h-full md:w-[928px] md:h-[296px] rounded-[48px] bg-gradient-to-br from-[#101010] to-[#000000] p-[48px]">
+      <div className="bg-border-fade rounded-[48px] w-[100%] h-[100%] md:w-[930px] md:h-[296px] p-[1px]">
+        <div className="flex flex-col md:flex-row gap-[72px] w-full h-full md:w-[928px] md:h-[296px] rounded-[48px] bg-light-to-dark p-[48px]">
           <div className="flex items-center justify-center w-[100%] md:w-[196.29px] h-[200px]">
             <img src={jitu} alt="jitu" />
           </div>
