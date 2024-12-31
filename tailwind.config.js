@@ -11,6 +11,7 @@ export default {
         textThin: ['"SF Pro Text Thin"', "sans-serif"],
         compact: ["SF Pro Compact", "sans-serif"],
         rounded: ['"SF Pro Compact Rounded"', "sans-serif"],
+        edu: ['"Edu QLD Beginner"', "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
