@@ -38,7 +38,7 @@ const Ios: React.FC = () => {
       {/* Introduction section */}
       <div className="w-[100%] bg-[#F2F2F5] relative">
         {/* Gradient background animation */}
-        <div className="absolute w-[100%] h-[24px] bg-gradient-to-l from-[#e43d19] via-[#3472bc] to-[#06d6d6] blur-[20px] animate-gradient-move top-[-12px] z-0"></div>
+        <div className="absolute w-[100%] h-[24px] bg-apple-ai blur-[20px] animate-gradient-move top-[-12px] z-0"></div>
         <div className="relative w-[100%] h-[100%] bg-[#F2F2F5] flex flex-col justify-center items-center">
           {/* Content container */}
           <div className="flex flex-col relative w-[1048px] text-[#000] z-10 gap-[48px] py-[48px]">
