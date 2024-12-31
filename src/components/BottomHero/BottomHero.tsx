@@ -12,7 +12,10 @@ const BottomHero: React.FC = () => {
           </div>
           <div className="flex flex-col w-[100%] md:w-[557px] gap-[24px]">
             <p className="text-[32px] font-semibold text-center md:text-left">
-              What sets me <GradientText>apart?</GradientText>
+              What sets me{" "}
+              <GradientText className="w-[114px] h-[52px] text-center text-[42px] font-semibold font-edu">
+                apart?
+              </GradientText>
             </p>
             <p className="text-[14px] text-white/80 font-text font-normal text-center md:text-left">
               I don’t just create digital experiences—I design journeys that
