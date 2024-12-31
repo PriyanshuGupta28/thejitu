@@ -2,7 +2,6 @@ import React from "react";
 
 interface GifBackgroundCardProps {
   img: string;
-  gif: string;
   title: string;
   description: string[];
   icon?: React.ReactNode;
