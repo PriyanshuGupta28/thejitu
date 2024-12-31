@@ -9,7 +9,7 @@ import record from "../../assets/3d/recording.png";
 const ProjectRedifinedBasedOn: React.FC = () => {
   return (
     <div className="relative">
-      <div className="w-[888px] left-[86px] bottom-[-2px] opacity-[0.5] h-[240px] absolute bg-gradient-to-l from-[#e43d19] via-[#3472bc] to-[#06d6d6] blur-[10px] animate-gradient-move"></div>
+      <div className="w-[888px] left-[86px] bottom-[-2px] opacity-[0.5] h-[240px] absolute bg-apple-ai blur-[10px] animate-gradient-move"></div>
       <div className="flex flex-col w-[1048px] justify-center items-center gap-[12px] py-[48px] rounded-[24px] bg-white relative">
         <div className="text-[24px] font-semibold text-[#000] font-display">
           Project <GradientText>redefine</GradientText> Based On
