@@ -6,7 +6,7 @@ import SubFooter from "../SubFooter/SubFooter";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col w-full bg-gradient-to-b from-[#101010] to-[#000000]">
+    <footer className="flex flex-col w-full bg-light-to-dark">
       <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8 p-6 md:h-[144px]">
         <div className="flex gap-4 items-center">
           <div>
