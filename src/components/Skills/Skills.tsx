@@ -1,5 +1,10 @@
 import React from "react";
-import { Figma } from "lucide-react";
+import figma from "../../assets/skills/figma.png";
+import ps from "../../assets/skills/ps.png";
+import ai from "../../assets/skills/ai.png";
+import Confluence from "../../assets/skills/illu.png";
+import Miro from "../../assets/skills/x.png";
+import ms from "../../assets/skills/ms.png";
 
 const Skills: React.FC = () => {
   return (
@@ -27,27 +32,27 @@ export default Skills;
 const SkillsData: SkillsType[] = [
   {
     title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    icon: figma,
   },
   {
-    title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    title: "Photoshop",
+    icon: ps,
   },
   {
-    title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    title: "Illustrator",
+    icon: ai,
   },
   {
-    title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    title: "Confluence",
+    icon: Confluence,
   },
   {
-    title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    title: "Miro",
+    icon: Miro,
   },
   {
-    title: "Figma",
-    icon: <Figma width={"36px"} height={"36px"} />,
+    title: "Ms Office",
+    icon: ms,
   },
 ];
 
@@ -60,7 +65,7 @@ const SkillCard = ({ title, icon }: SkillsType) => {
         aria-label={title}
         title={title}
       >
-        {icon}
+        <img src={icon} alt="alt" />
       </div>
     </div>
   );
@@ -68,5 +73,5 @@ const SkillCard = ({ title, icon }: SkillsType) => {
 
 type SkillsType = {
   title: string;
-  icon: React.ReactNode;
+  icon: string;
 };
