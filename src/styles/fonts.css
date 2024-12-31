@@ -11,6 +11,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "SF Pro Text Thin";
   src: url("../../public/fonts/SF-Pro-Text-Thin.otf") format("opentype");
