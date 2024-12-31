@@ -8,7 +8,10 @@ const HeroSection: React.FC = () => {
       <GlowingCard />
       <div className="flex flex-col gap-[24px] p-[48px] justify-center items-center ">
         <h1 className="text-[32px] text-center">
-          <span>Designing</span> <GradientText>stories</GradientText>
+          <span>Designing</span>{" "}
+          <GradientText className="w-[102px] h-[50px] text-center font-semibold text-[42px]">
+            stories
+          </GradientText>
           <span>, not just screens.</span>
         </h1>
         <p className="text-[14px] font-normal text-center w-[100%] md:w-[710px] text-white/80">
