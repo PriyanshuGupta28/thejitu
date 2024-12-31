@@ -53,13 +53,15 @@ const SkillsData: SkillsType[] = [
 
 const SkillCard = ({ title, icon }: SkillsType) => {
   return (
-    <div
-      className="w-[120px] h-[120px] rounded-[32px] border border-zinc-700 flex justify-center items-center bg-gradient-to-b from-[#101010] to-[#000000]"
-      role="button"
-      aria-label={title}
-      title={title}
-    >
-      {icon}
+    <div className="bg-gradient-to-b from-[#404040] to-black rounded-[38px] w-[120px] h-[120px] p-[1px]">
+      <div
+        className="flex justify-center items-center w-full h-full rounded-[38px] bg-gradient-to-br from-[#101010] to-[#000000]"
+        role="button"
+        aria-label={title}
+        title={title}
+      >
+        {icon}
+      </div>
     </div>
   );
 };
