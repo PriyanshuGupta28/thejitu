@@ -9,7 +9,7 @@ import ms from "../../assets/skills/ms.png";
 const Skills: React.FC = () => {
   return (
     <div className="flex flex-col py-[24px] gap-[16px] justify-center items-center">
-      <p className=" text-center text-[14px] weight-[400] font-text mb-4 text-white/80">
+      <p className=" text-center text-[14px] weight-[400] font-text mb-4 text-white/80 tracking-[0.56px] uppercase">
         Expertise in the following tools
       </p>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 lg:grid-cols-6 gap-4 place-items-center">
