@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`hidden navbar w-full h-[72px] text-white md:flex items-center justify-between px-[48px] top-0 fixed border-b rounded-b-[20px] ${
+      className={`hidden transition-all duration-300 ease-in-out navbar w-full h-[72px] text-white md:flex items-center justify-between px-[48px] top-0 fixed border-b rounded-b-[20px] ${
         scrolled
           ? " bg-black/40 border-zinc-800 backdrop-blur-[20px]"
           : "bg-transparent border-transparent"
