@@ -16,7 +16,7 @@ const ProjectsSection: React.FC = () => {
           alt="jituthumb_img"
           className="w-[79.65px] h-[90px]"
         />
-        <h2 className="text-[24px] md:text-[32px] font-semibold">
+        <h2 className="text-[24px] md:text-[32px] font-semibold tracking-[-0.32px]">
           Case studies and projects
         </h2>
         <div className="flex flex-col md:flex-row gap-[20px] flex-wrap w-full justify-center items-center">
