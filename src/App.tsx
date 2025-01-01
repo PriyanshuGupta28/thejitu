@@ -13,7 +13,6 @@ function App() {
           position: "relative",
           zIndex: 100,
           color: "white",
-          paddingTop: "72px",
         }}
       >
         <Navbar />
