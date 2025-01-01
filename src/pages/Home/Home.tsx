@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         <ProjectsSection />
         <div>
           <div className="flex justify-center items-center py-[72px]">
-            <p className="w-[100%] md:w-[624px] text-[32px] text-left md:text-center font-semibold py-[100px] px-[24px]">
+            <p className="w-[100%] md:w-[624px] text-[32px] text-left md:text-center font-semibold py-[100px] px-[24px] tracking-[-0.32px]">
               Product design is an ongoing process that require constant
               maintenance. The beauty of the UIUX design is that it’s never
               finished.
