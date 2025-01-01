@@ -18,13 +18,13 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:gap-8">
-          <div className="flex justify-center items-center h-[42px] w-[190px] border border-zinc-700 rounded-full p-3 px-4 gap-2">
+          <div className="flex justify-center items-center h-[42px] w-[190px] border border-[#404040] rounded-full p-3 px-4 gap-2">
             <div>
               <Mail className="w-[18px] h-[18px]" />
             </div>
             <Link
               to="mailto:jitofficial@icloud.com"
-              className="text-[14px] underline"
+              className="text-white/80 text-[14px] underline tracking-[-0.4px]"
             >
               jitofficial@icloud.com
             </Link>
@@ -51,7 +51,7 @@ export default Footer;
 const FooterIcon = ({ title, link, icon }: FooterLinksProps) => {
   return (
     <div
-      className="h-[42px] w-[42px] flex justify-center items-center border border-zinc-700 rounded-full"
+      className="h-[42px] w-[42px] flex justify-center items-center border border-[#404040] rounded-full"
       title={title}
     >
       <Link to={link}>{icon}</Link>
