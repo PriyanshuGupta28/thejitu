@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 import logo from "../../assets/logo.png";
 import { Menu } from "lucide-react";
 
 const Navbar: React.FC = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navHeight = document.querySelector(".navbar")?.clientHeight || 0;
+      setScrolled(window.scrollY > navHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className="w-full h-[72px] bg-zinc-950/40 text-white flex items-center justify-between px-[48px] top-0 fixed  backdrop-blur-[10px] border-b border-zinc-800 rounded-b-[20px]"
+      className={`navbar w-full h-[72px] text-white flex items-center justify-between px-[48px] top-0 fixed backdrop-blur-[10px] border-b rounded-b-[20px] ${
+        scrolled
+          ? " bg-black/40 border-zinc-800 "
+          : "bg-transparent border-transparent"
+      }`}
       style={{ zIndex: 1000 }}
     >
       <div className="flex-col hidden md:flex">
