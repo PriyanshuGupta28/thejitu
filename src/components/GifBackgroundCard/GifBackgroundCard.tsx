@@ -24,7 +24,9 @@ const GifBackgroundCard: React.FC<GifBackgroundCardProps> = ({
           />
         </div>
         <div className="w-full h-full flex flex-col items-left justify-end text-white relative z-10 ">
-          <h1 className="text-[16px] font-semibold">{title}</h1>
+          <h1 className="text-[16px] font-semibold tracking-[-0.16px]">
+            {title}
+          </h1>
           <p className="flex items-center">
             {icon && (
               <span className="mr-2 flex items-center gap-1">
@@ -33,7 +35,10 @@ const GifBackgroundCard: React.FC<GifBackgroundCardProps> = ({
               </span>
             )}
             {description?.map((d, i) => (
-              <span key={i} className="mr-1 font-normal text-[14px]">
+              <span
+                key={i}
+                className="mr-1 font-normal text-[12px] tracking-[-0.24px] text-white/80 leading-[18px]"
+              >
                 {d} {description?.length - 1 === i ? "" : "•"}
               </span>
             ))}
