@@ -11,13 +11,13 @@ const BottomHero: React.FC = () => {
             <img src={jitu} alt="jitu" />
           </div>
           <div className="flex flex-col w-[100%] md:w-[557px] gap-[24px]">
-            <p className="text-[32px] font-semibold text-center md:text-left">
+            <p className="text-[32px] font-semibold text-center md:text-left tracking-[-0.32px]">
               What sets me{" "}
-              <GradientText className="w-[114px] h-[52px] text-center text-[42px] font-semibold font-edu">
+              <GradientText className="w-[114px] h-[52px] text-center text-[42px] font-semibold font-edu tracking-[-1.68px]">
                 apart?
               </GradientText>
             </p>
-            <p className="text-[14px] text-white/80 font-text font-normal text-center md:text-left">
+            <p className="text-[14px] text-white/80 font-text font-normal text-center md:text-left tracking-[-0.28px]">
               I don’t just create digital experiences—I design journeys that
               connect, inspire, and perform. By blending creativity with purpose
               and functionality with emotion, I shape solutions that adapt to
@@ -37,6 +37,7 @@ const BottomHero: React.FC = () => {
                     href={
                       "https://drive.google.com/file/d/1yTOSvk150NYgNhzUwDUB-FGzeTeWfxyW/view"
                     }
+                    className="tracking-[-0.4px]"
                   >
                     View Resume 􀄫
                   </a>
