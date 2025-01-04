@@ -22,7 +22,8 @@ export default {
       backgroundImage: {
         "apple-ai": "linear-gradient(to left, #e43d19, #3472bc, #06d6d6)",
         "border-fade": "linear-gradient(to bottom, #404040, black)",
-        "overlay-fade": "linear-gradient(to top, #000000, rgba(0, 0, 0, 0))",
+        // "overlay-fade": "linear-gradient(to top, #000000, rgba(0, 0, 0, 0))",
+        // "overlay-fade": "linear-gradient(to top, #000000, rgba(0, 0, 0, 0.25))",
         "light-to-dark": "linear-gradient(to bottom right, #101010, #000000)",
       },
     },
