@@ -9,7 +9,7 @@ export default {
         display: ['"SF Pro Display"', "sans-serif"],
         text: ['"SF Pro Text"', "sans-serif"],
         textThin: ['"SF Pro Text Thin"', "sans-serif"],
-        compact: ["SF Pro Compact", "sans-serif"],
+        compact: ['"SF Pro Compact"', "sans-serif"],
         rounded: ['"SF Pro Compact Rounded"', "sans-serif"],
         edu: ['"Edu QLD Beginner"', "sans-serif"],
       },
@@ -22,9 +22,29 @@ export default {
       backgroundImage: {
         "apple-ai": "linear-gradient(to left, #e43d19, #3472bc, #06d6d6)",
         "border-fade": "linear-gradient(to bottom, #404040, black)",
-        // "overlay-fade": "linear-gradient(to top, #000000, rgba(0, 0, 0, 0))",
-        // "overlay-fade": "linear-gradient(to top, #000000, rgba(0, 0, 0, 0.25))",
         "light-to-dark": "linear-gradient(to bottom right, #101010, #000000)",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+        },
+        "marquee-vertical": {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
+      },
+      animation: {
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
     },
   },
