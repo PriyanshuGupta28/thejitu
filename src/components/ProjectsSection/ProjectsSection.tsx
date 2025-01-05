@@ -27,6 +27,7 @@ const ProjectsSection: React.FC = () => {
               description={project.description}
               img={project.img}
               icon={project.icon}
+              link={project.link}
             />
           ))}
         </div>
@@ -41,6 +42,7 @@ type ProjectDataType = {
   title: string;
   description: string[];
   img: string;
+  link: string;
   icon?: React.ReactNode;
 };
 
@@ -49,26 +51,31 @@ const ProjectData: ProjectDataType[] = [
     title: "Qdesq",
     description: ["UX Correction", "Case Study", "Freelance"],
     img: qdesq,
+    link: "/qdesq",
   },
   {
     title: "WeHive",
     description: ["Case Study", "Freelance"],
     img: wehive,
     icon: <Lock size={12} />,
+    link: "/wehive",
   },
   {
     title: "iOS Case Study",
     description: ["UX Correction", "Case Study", "Self"],
     img: ioscs,
+    link: "/ios",
   },
   {
     title: "Hubilo Platform redesign",
     description: ["UX Correction", "Case Study", "Full Time"],
     img: hubilo,
+    link: "/hubilo",
   },
   {
     title: "DYT Club",
     description: ["Case Study", "Freelance"],
     img: dyt,
+    link: "/dyt",
   },
 ];
