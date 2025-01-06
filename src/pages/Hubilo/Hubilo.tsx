@@ -9,6 +9,17 @@ import Solution from "../../components/Hubilio/Solution";
 import DesignProcess from "../../components/Hubilio/DesignProcess";
 import CompetitiveAnalysis from "../../components/Hubilio/CompetitiveAnalysis";
 import Competitors from "../../components/Hubilio/Competitors";
+import WhatUsersWereThinking from "../../components/Hubilio/WhatUsersWereThinking";
+import KeyQuestionsWeAsked from "../../components/Hubilio/KeyQuestionsWeAsked";
+import Sketches from "../../components/Hubilio/Sketches";
+import DesignComponents from "../../components/Hubilio/DesignComponents";
+import Revamp from "../../components/Hubilio/Revamp";
+import ThemeCustomization from "../../components/Hubilio/ThemeCustomization";
+import SuccessMetrics from "../../components/Hubilio/SuccessMetrics";
+import FinalTakeaway from "../../components/Hubilio/FinalTakeaway";
+import AwardsRecognition from "../../components/Hubilio/Awards&Recognition";
+import ProjectsAtHubilo from "../../components/Hubilio/ProjectsAtHubilo";
+import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 
 const Hubilo: React.FC = () => {
   return (
@@ -55,6 +66,20 @@ const Hubilo: React.FC = () => {
       <DesignProcess />
       <Competitors />
       <CompetitiveAnalysis />
+      <WhatUsersWereThinking />
+      <KeyQuestionsWeAsked />
+      <Sketches />
+      <DesignComponents />
+      <Revamp />
+      <ThemeCustomization />
+      <SuccessMetrics />
+      <FinalTakeaway />
+      <AwardsRecognition />
+      <ProjectsAtHubilo />
+      <p className="text-white text-2xl font-semibold font-display">
+        Discover What’s Next
+      </p>
+      <ProjectsSection />
     </div>
   );
 };

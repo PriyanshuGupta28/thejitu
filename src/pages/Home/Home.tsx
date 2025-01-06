@@ -3,6 +3,7 @@ import BottomHero from "../../components/BottomHero/BottomHero";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import Skills from "../../components/Skills/Skills";
+import GetInTouch from "../../components/GetInTouch/GetInTouch";
 
 const Home: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         <BottomHero />
+        <GetInTouch />
       </div>
     </>
   );
