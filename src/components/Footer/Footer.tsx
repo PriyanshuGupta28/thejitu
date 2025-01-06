@@ -1,13 +1,15 @@
 import React from "react";
-import { Figma, Mail } from "lucide-react";
+import { Figma, Linkedin } from "lucide-react";
+import medium from "../../assets/icons/medium.png";
+import be from "../../assets/icons/be.png";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import SubFooter from "../SubFooter/SubFooter";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col w-full bg-light-to-dark">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8 p-6 md:h-[144px]">
+    <footer className="flex flex-col w-full bg-light-to-dark justify-center items-center">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full md:w-[1028px] gap-8 md:h-[144px]">
         <div className="flex gap-4 items-center">
           <div>
             <img src={logo} alt="logo" className="w-[22.86px] h-[48px]" />
@@ -18,17 +20,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:gap-8">
-          <div className="flex justify-center items-center h-[42px] w-[190px] border border-[#404040] rounded-full p-3 px-4 gap-2">
-            <div>
-              <Mail className="w-[18px] h-[18px]" />
-            </div>
-            <Link
-              to="mailto:jitofficial@icloud.com"
-              className="text-white/80 text-[14px] underline tracking-[-0.4px]"
-            >
-              jitofficial@icloud.com
-            </Link>
-          </div>
           <div className="flex gap-4 justify-center">
             {footerLinks.map((link) => (
               <FooterIcon
@@ -67,23 +58,23 @@ type FooterLinksProps = {
 
 const footerLinks: FooterLinksProps[] = [
   {
-    title: "Connect",
+    title: "LinkedIn",
+    link: "LinkedIn",
+    icon: <Linkedin className="w-[18px] h-[18px]" />,
+  },
+  {
+    title: "Behance",
+    link: "Connect",
+    icon: <img src={be} />,
+  },
+  {
+    title: "Figma",
     link: "Connect",
     icon: <Figma className="w-[18px] h-[18px]" />,
   },
   {
-    title: "Connect",
+    title: "Medium",
     link: "Connect",
-    icon: <Figma className="w-[18px] h-[18px]" />,
-  },
-  {
-    title: "Connect",
-    link: "Connect",
-    icon: <Figma className="w-[18px] h-[18px]" />,
-  },
-  {
-    title: "Connect",
-    link: "Connect",
-    icon: <Figma className="w-[18px] h-[18px]" />,
+    icon: <img src={medium} />,
   },
 ];
