@@ -3,7 +3,7 @@ import React from "react";
 
 const Desc: React.FC = () => {
   return (
-    <div className="h-[164px] py-12 justify-center items-start gap-2 inline-flex">
+    <div className="h-[260px] py-12 justify-center items-start gap-2 inline-flex">
       <div className="bg-border-fade w-[252px] h-[164px] p-[1px] rounded-3xl">
         <div className="w-[250px] h-[164px] p-6 bg-gradient-to-b from-[#101010] to-black rounded-3xl flex-col justify-start items-start gap-4 inline-flex">
           <div className="self-stretch text-white/80 text-sm font-compact uppercase leading-tight tracking-wide">
