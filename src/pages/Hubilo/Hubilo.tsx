@@ -2,10 +2,17 @@ import React from "react";
 import Journey from "../../components/Hubilio/Journey";
 import GradientText from "../../components/GradientText.tsx/GradientText";
 import Desc from "../../components/Hubilio/Desc";
+import Story from "../../components/Hubilio/Story";
+import Overview from "../../components/Hubilio/Overview";
+import ProblemStatements from "../../components/Hubilio/ProblemStatements";
+import Solution from "../../components/Hubilio/Solution";
+import DesignProcess from "../../components/Hubilio/DesignProcess";
+import CompetitiveAnalysis from "../../components/Hubilio/CompetitiveAnalysis";
+import Competitors from "../../components/Hubilio/Competitors";
 
 const Hubilo: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-[200px] gap-[12px]">
+    <div className="flex flex-col items-center justify-center mt-[150px] py-12 gap-[12px]">
       <div>
         {projectHeader.map((header, index) => (
           <div key={index} className="text-center">
@@ -39,6 +46,15 @@ const Hubilo: React.FC = () => {
       </div>
       <Journey />
       <Desc />
+      <div className="w-full bg-[#f2f2f5]">
+        <Story />
+      </div>
+      <Overview />
+      <ProblemStatements />
+      <Solution />
+      <DesignProcess />
+      <Competitors />
+      <CompetitiveAnalysis />
     </div>
   );
 };
