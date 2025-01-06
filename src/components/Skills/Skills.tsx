@@ -12,14 +12,13 @@ const Skills: React.FC = () => {
       <p className=" text-center text-[14px] weight-[400] font-text mb-4 text-white/80 tracking-[0.56px] uppercase">
         Expertise in the following tools
       </p>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 lg:grid-cols-6 gap-4 place-items-center">
-        {SkillsData.map((skill: SkillsType, index: number) => (
+      <div
+        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 lg:grid-cols-6 gap-4 place-items-center"
+        key={Math.random() * 100}
+      >
+        {SkillsData.map((skill: SkillsType) => (
           <>
-            <SkillCard
-              title={skill.title}
-              icon={skill.icon}
-              key={index + skill.title}
-            />
+            <SkillCard title={skill.title} icon={skill.icon} />
           </>
         ))}
       </div>
@@ -58,7 +57,10 @@ const SkillsData: SkillsType[] = [
 
 const SkillCard = ({ title, icon }: SkillsType) => {
   return (
-    <div className="bg-border-fade rounded-[38px] w-[120px] h-[120px] p-[1px]">
+    <div
+      className="bg-border-fade rounded-[38px] w-[120px] h-[120px] p-[1px]"
+      key={"skill" + title + "-"}
+    >
       <div
         className="flex justify-center items-center w-full h-full rounded-[38px] bg-gradient-to-br from-[#101010] to-[#000000]"
         role="button"
