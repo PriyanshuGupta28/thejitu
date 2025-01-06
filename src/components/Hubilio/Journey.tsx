@@ -10,7 +10,7 @@ const Journey: React.FC = () => {
     gsap.fromTo(
       path,
       { strokeDasharray: length, strokeDashoffset: length },
-      { strokeDashoffset: 0, duration: 3, ease: "power2.inOut" }
+      { strokeDashoffset: 0, duration: 5, ease: "bounce.inOut" }
     );
   }, []);
   return (
