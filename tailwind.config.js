@@ -12,6 +12,7 @@ export default {
         compact: ['"SF Pro Compact"', "sans-serif"],
         rounded: ['"SF Pro Compact Rounded"', "sans-serif"],
         edu: ['"Edu QLD Beginner"', "sans-serif"],
+        kalam: ['"Kalam"', "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
