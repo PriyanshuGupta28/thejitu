@@ -1,6 +1,6 @@
 import React from "react";
 import { MoveRightIcon } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface GifBackgroundCardProps {
   img: string;
@@ -17,10 +17,17 @@ const GifBackgroundCard: React.FC<GifBackgroundCardProps> = ({
   icon,
   link,
 }) => {
+  const location = useLocation();
+  console.log(location.pathname === link);
   return (
     <Link
       to={link}
-      className="group flex flex-col justify-between bg-border-fade w-[370px] h-[300px] md:w-[456px] md:h-[300px] rounded-[48px] p-[1px] relative cursor-pointer"
+      className={`group flex flex-col justify-between bg-border-fade w-[370px] h-[300px] md:w-[456px] md:h-[300px] rounded-[48px] p-[1px] relative cursor-pointer ${
+        location.pathname === link ? "hidden" : ""
+      }`}
+      onMouseEnter={() => {
+        console.log("link", link);
+      }}
     >
       <div className="flex flex-col w-[370px] h-[300px] md:w-[454px] md:h-[300px] bg-cover bg-center transition-all duration-300 ease-in-out p-[48px] rounded-[48px] relative">
         <div className="absolute top-0 left-0 w-full h-[230px] bg-black rounded-tr-[48px] rounded-tl-[48px] overflow-hidden">
