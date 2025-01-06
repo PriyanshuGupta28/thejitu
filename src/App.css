@@ -1,5 +1,6 @@
 @import "./styles/fonts.css";
 @import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Poppins:ital,wght@0,600;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,600;1,200&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
