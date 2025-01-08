@@ -158,12 +158,12 @@ const ThemeCustomization: React.FC = () => {
                 src={brcorner}
               />
             </div>
-            <div className="w-[323.46px] h-[143px] left-[563.12px] top-0 absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
+            <div className="w-[323.46px] left-[563.12px] top-[-20px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
               <img
-                className="w-[27.93px] h-[28.44px] left-[-8px] top-[115px] absolute"
+                className="w-[27.93px] h-[28.44px] left-[-8px] top-[138px] absolute"
                 src={blcorner}
               />
-              <div className="grow shrink basis-0 h-[143px] p-3  justify-center items-center gap-2.5 flex z-10">
+              <div className="grow shrink basis-0 h-full p-3 justify-center items-center gap-2.5 flex z-10">
                 <div className="grow shrink basis-0">
                   <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                     The platform supports{" "}
