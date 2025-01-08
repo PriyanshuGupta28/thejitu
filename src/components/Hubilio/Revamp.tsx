@@ -66,7 +66,7 @@ const Revamp: React.FC = () => {
             src={revamp1}
           />
           <div className="w-[380px] left-[-101px] top-[58.72px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
-            <div className="grow shrink basis-0 h-36 p-3  justify-center items-center gap-2.5 flex">
+            <div className="grow shrink basis-0 h-full p-3 justify-center items-center gap-2.5 flex">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   Banner Blocking Navigation
@@ -102,12 +102,12 @@ const Revamp: React.FC = () => {
               </div>
             </div>
             <img
-              className="w-[27.93px] h-[28.44px] left-[360px] top-[115px] absolute origin-top-left"
+              className="w-[27.93px] h-[28.44px] left-[362px] top-[135px] absolute origin-top-left"
               src={brcorner}
             />
           </div>
           <div className="w-[415px] left-[-146px] top-[448.72px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
-            <div className="grow shrink basis-0 h-[164px] p-3  justify-center items-center gap-2.5 flex">
+            <div className="grow shrink basis-0 h-full p-3  justify-center items-center gap-2.5 flex">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   Overcrowded Viewport
@@ -160,10 +160,10 @@ const Revamp: React.FC = () => {
           </div>
           <div className="w-[370px] left-[670px] top-[70.72px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
             <img
-              className="w-[27.93px] h-[28.44px] left-[-8px] top-[157px] absolute"
+              className="w-[27.93px] h-[28.44px] left-[-8px] top-[187px] absolute"
               src={blcorner}
             />
-            <div className="grow shrink basis-0 h-[186px] p-3  justify-center items-center gap-2.5 flex z-10">
+            <div className="grow shrink basis-0 h-full p-3 justify-center items-center gap-2.5 flex z-10">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   Navigation Bar Limitations
@@ -216,10 +216,10 @@ const Revamp: React.FC = () => {
           </div>
           <div className="w-[344px] left-[625px] top-[-174.28px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
             <img
-              className="w-[27.93px] h-[28.44px] left-[-8px] top-[135px] absolute"
+              className="w-[27.93px] h-[28.44px] left-[-8px] top-[165px] absolute"
               src={blcorner}
             />
-            <div className="grow shrink basis-0 h-[164px] p-3  justify-center items-center gap-2.5 flex z-10">
+            <div className="grow shrink basis-0 h-full p-3 justify-center items-center gap-2.5 flex z-10">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   Redundant and Bland Navigation
@@ -327,10 +327,10 @@ const Revamp: React.FC = () => {
           />
           <div className="w-[290px] left-[735px] top-[87.72px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
             <img
-              className="w-[27.93px] h-[28.44px] left-[-8px] top-[75px] absolute"
+              className="w-[27.93px] h-[28.44px] left-[-8px] top-[91px] absolute"
               src={blcorner}
             />
-            <div className="grow shrink basis-0 h-[104px] p-3  justify-center items-center gap-2.5 flex z-10">
+            <div className="grow shrink basis-0 h-full p-3  justify-center items-center gap-2.5 flex z-10">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   An{" "}
@@ -364,10 +364,10 @@ const Revamp: React.FC = () => {
           </div>
           <div className="w-[290px] left-[625px] top-[-111.78px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
             <img
-              className="w-[27.93px] h-[28.44px] left-[-8px] top-[94px] absolute"
+              className="w-[27.93px] h-[28.44px] left-[-8px] top-[115px] absolute"
               src={blcorner}
             />
-            <div className="grow shrink basis-0 h-[123px] p-3  justify-center items-center gap-2.5 flex z-10">
+            <div className="grow shrink basis-0 h-full p-3 justify-center items-center gap-2.5 flex z-10">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   The navigation bar has been{" "}
@@ -397,7 +397,7 @@ const Revamp: React.FC = () => {
             </div>
           </div>
           <div className="w-[313px] left-[-94px] top-[198.46px] absolute bg-[#007aff] rounded-2xl shadow-[0px_12px_24px_0px_rgba(0,0,0,0.35)] justify-start items-start gap-2.5 inline-flex">
-            <div className="grow shrink basis-0 h-[103px] p-3  justify-center items-center gap-2.5 flex">
+            <div className="grow shrink basis-0 h-full p-3  justify-center items-center gap-2.5 flex">
               <div className="grow shrink basis-0">
                 <span className="text-white text-sm font-normal font-['SF Pro Text'] leading-tight">
                   The banner now{" "}
@@ -422,7 +422,7 @@ const Revamp: React.FC = () => {
               </div>
             </div>
             <img
-              className="w-[27.93px] h-[28.44px] left-[295px] top-[74px] absolute origin-top-left"
+              className="w-[27.93px] h-[28.44px] left-[295px] top-[90px] absolute origin-top-left"
               src={brcorner}
             />
           </div>
