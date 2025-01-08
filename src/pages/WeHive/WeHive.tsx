@@ -10,6 +10,8 @@ import ProblemStatements from "../../components/WeHive/ProblemStatements";
 import CraftingTheWeHive from "../../components/WeHive/CraftingTheWeHive";
 import Components500 from "../../components/WeHive/Components500";
 import ResearchDesign from "../../components/WeHive/Research&Design";
+import DesignPreview from "../../components/WeHive/DesignPreview";
+import ChallengesLearnings from "../../components/WeHive/ChallengesLearnings";
 
 const WeHive: React.FC = () => {
   return (
@@ -56,6 +58,8 @@ const WeHive: React.FC = () => {
       <CraftingTheWeHive />
       <Components500 />
       <ResearchDesign />
+      <DesignPreview />
+      <ChallengesLearnings />
       <div className="text-white text-2xl font-semibold font-['SF Pro Display']">
         Discover What’s Next
       </div>
