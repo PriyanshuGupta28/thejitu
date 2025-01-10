@@ -56,7 +56,15 @@ const Hubilo: React.FC = () => {
         ))}
       </div>
       <Journey />
-      <Desc />
+      <div
+        className="w-full h-full flex flex-col justify-center items-center"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+        }}
+      >
+        <Desc />
+      </div>
       <div className="w-full bg-[#f2f2f5]">
         <Story />
       </div>
