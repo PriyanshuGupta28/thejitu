@@ -4,15 +4,24 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import Skills from "../../components/Skills/Skills";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
+import thumbjitu from "../../assets/thumbjitu.png";
 
 const Home: React.FC = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-16">
-        <HeroSection />
-        <Skills />
+        <div
+          className="w-full h-full"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+          }}
+        >
+          <HeroSection />
+          <Skills />
+        </div>
         <img
-          src="https://s3-alpha-sig.figma.com/img/fb53/b23d/fa08b9d0d398c8c13bb0af77f4505c84?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VEyDCd3DI11IytDvy4Ykt8N~2xMqTBPG8jTxT4b7CZJvMguJz39WNlc3rZgnRYtTDFQkMs6Hq6oertfHAQor4Qpcr1s8TkpMeaBymHdV7Ke0ZQFcbu76t3Colrm53EFPOWE5MZRTGKUuup5-VbXCdAQreU-DbOjhnOw8Emw15oKdHgBZVn75VeZIUs-0wiSmGfHvvYWZCOlqAfYXlR37EpZhjwg43JK2zhvTg2~-EeyvqmDmjapkqvqEXLUWtCTPxOfDM1Ek3K73~Wu~aXP0w3Av~4rkXCgp95mPJO8WCMOEVlfi9TZpF68gHEQQQx4uLBSJdlg2WCC0c8zlrUGW6Q__"
+          src={thumbjitu}
           alt="jituthumb_img"
           className="w-[79.65px] h-[90px] mt-5"
         />
