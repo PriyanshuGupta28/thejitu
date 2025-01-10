@@ -47,8 +47,16 @@ const WeHive: React.FC = () => {
           </div>
         ))}
       </div>
-      <HeroSection />
-      <TheBirthOfWeHive />
+      <div
+        className="w-full h-full flex flex-col justify-center items-center"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+        }}
+      >
+        <HeroSection />
+        <TheBirthOfWeHive />
+      </div>
       <div className="w-full bg-light-to-dark flex flex-col justify-center items-center p-[48px] gap-[48px]">
         <Overview />
         <ProblemStatements />
