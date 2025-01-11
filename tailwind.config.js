@@ -23,6 +23,10 @@ export default {
       backgroundImage: {
         "apple-ai": "linear-gradient(to left, #e43d19, #3472bc, #06d6d6)",
         "border-fade": "linear-gradient(to bottom, #404040, black)",
+        "red-border-fade": "linear-gradient(to bottom, #F61768, black)",
+        "blue-border-fade": "linear-gradient(to bottom, #5D60DE, black)",
+        "yellow-border-fade": "linear-gradient(to bottom, #F7E034, black)",
+        "orange-border-fade": "linear-gradient(to bottom, #FC7F83, black)",
         "light-to-dark": "linear-gradient(to bottom right, #101010, #000000)",
       },
       keyframes: {
